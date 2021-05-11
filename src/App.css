@@ -1,0 +1,52 @@
+.sidebar{
+    height: 100vh;
+    width:30%;
+    position: fixed;
+    left:70%;
+    background-color: rgb(253, 255, 255);
+    border:1px solid rgb(161, 159, 159);
+    animation: 0.3s smooth 1 linear; 
+   
+
+}
+.sidebar-none{
+    display: none;
+}
+.sidebar_top_header{
+    display: flex;
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.details{
+    padding:10%
+}
+.details p{
+    padding: 10px;
+}
+.details p:hover{
+ background-color: rgb(212, 209, 209);
+}
+.MuiTableRow-root{
+    cursor: pointer;
+}
+.MuiTableRow-root:hover{
+    background-color: rgb(212, 211, 211);
+}
+
+@keyframes smooth{
+from{
+width: 0;
+}
+to{
+width: 30%
+}
+}
+
+@media( max-width:767px) {
+.sidebar{
+    width: 80%;
+    left:20%;
+}
+}
